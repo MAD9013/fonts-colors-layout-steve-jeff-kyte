@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 *,
 *::after,
 *::before{
@@ -8,25 +10,32 @@
 html{
     font-size: 16px;
     line-height: 1.6;
-    /*font-family: font stack required for body text */
+    font-family: Poppins, Helvetica, Arial, sans-serif;
+    padding: 1em 1em;
 }
 h1, h2, h3, h4{
-    /*font-family: font stack required for headings */
+    font-family: 'Roboto Slab', Candara, 'Times New Roman', serif;
 }
 p{
     
 }
 .container{
-    
+    max-width: 1500px;
 }
 .subnav{
-    
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    align-items: center;
 }
 .subnav a{
-    
+    margin: 0 1em;
 }
 .mainnav{
-    
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
 }
 .mainnav a{
     
@@ -44,22 +53,25 @@ p{
     
 }
 .content .story{
-    
+    clear: both;
+    overflow: auto;
 }
 .story.lead-story{
     
 }
 h1.story-title{
-    
+    margin-top: 2.5em;
 }
 .story img{
-    
+    float: left;
+    margin-right: 1em;
 }
 .story p{
     
 }
 .story blockquote{
     quotes: "\201E" "\201D";
+    margin: 1em;
 }
 .story blockquote::before{
     content: open-quote;
@@ -68,13 +80,14 @@ h1.story-title{
     content: close-quote;
 }
 .story p.byline{
-    
+    font-style: italic;
+    margin-bottom: 0.5em;
 }
 p.byline span.author{
     
 }
 p.byline span.pub{
-    
+    margin-left: 2em;
 }
 .foot{
     
