@@ -6,6 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 html{
     font-size: 16px;
@@ -83,13 +84,18 @@ h1.story-title{
     
 }
 .story blockquote{
-    quotes: "\201E" "\201D";
+    quotes: "\201C" "\201D";
     margin: 1em;
     color: hsl(198, 18%, 60%);
     font-size: 1.2em;
+    text-align: center;
 }
-.story blockquote::before{
+.story blockquote::before, .story blockquote::after {
     content: open-quote;
+    font-size: 2em;
+    position: relative;
+    top: 0.3em;
+    line-height: 0;
 }
 .story blockquote::after{
     content: close-quote;
