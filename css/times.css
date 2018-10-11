@@ -12,14 +12,15 @@ html{
     line-height: 1.6;
     font-family: Poppins, Helvetica, Arial, sans-serif;
     padding: 1em 1em;
-    /*background-color: hsl(0, 0%, 0%);*/
-    --color-1: hsl(199, 29%, 40%);
-    --color-2: hsl(198, 18%, 60%);
-    color: var(--color-1);
+    
+    /*--color-1: hsl(199, 29%, 40%);
+    --color-2: hsl(198, 18%, 60%);*/
+    
+    color: hsl(199, 29%, 40%);
 }
 h1, h2, h3, h4{
     font-family: 'Roboto Slab', Candara, 'Times New Roman', serif;
-    color: var(--color-1);
+    color: hsl(199, 29%, 40%);
     font-size: 2em;
 }
 p{
@@ -36,7 +37,7 @@ p{
 }
 .subnav a{
     margin: 0 1em;
-    color: var(--color-2);
+    color: hsl(198, 18%, 60%);
 }
 .mainnav{
     display: flex;
@@ -46,13 +47,13 @@ p{
     margin-top: 1em;
 }
 .mainnav a{
-    color: var(--color-2);
+    color: hsl(198, 18%, 60%);
 }
 .masthead{
     
 }
 .times-logo{
-    width: 100%;
+    width: 100vw;
 }
 .masthead h1{
     font-size:2.5em;
@@ -74,6 +75,8 @@ h1.story-title{
 .story img{
     float: left;
     margin-right: 1em;
+    max-width: 400px;
+    width: 50vw;
 }
 .story p{
     
@@ -81,7 +84,7 @@ h1.story-title{
 .story blockquote{
     quotes: "\201E" "\201D";
     margin: 1em;
-    color: var(--color-2);
+    color: hsl(198, 18%, 60%);
     font-size: 1.2em;
 }
 .story blockquote::before{
@@ -93,7 +96,7 @@ h1.story-title{
 .story p.byline{
     font-style: italic;
     margin-bottom: 0.5em;
-    color: var(--color-2);
+    color: hsl(198, 18%, 60%);
     font-size: 1.2em;
 }
 p.byline span.author{
@@ -109,5 +112,13 @@ p.byline span.pub{
     
 }
 
-/* 	hsl(250, 100%, 40%) 5c8ea6 93aab4
-    hsl(210, 100%, 40%) */
+@media screen and (min-width: 480px) {
+    .story img {
+        width: 40vw;
+    }
+}
+@media screen and (min-width: 720px) {
+    .story img {
+        width: 30vw;
+    }
+}
