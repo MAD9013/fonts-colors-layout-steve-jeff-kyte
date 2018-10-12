@@ -13,15 +13,11 @@ html{
     line-height: 1.6;
     font-family: Poppins, Helvetica, Arial, sans-serif;
     padding: 1em 1em;
-    
-    /*--color-1: hsl(199, 29%, 40%);
-    --color-2: hsl(198, 18%, 60%);*/
-    
-    color: hsl(199, 29%, 40%);
+/*    --color-2: hsl(198, 18%, 64%);*/
+    color: hsl(199, 29%, 51%);
 }
 h1, h2, h3, h4{
     font-family: 'Roboto Slab', Candara, 'Times New Roman', serif;
-    color: hsl(199, 29%, 40%);
     font-size: 2em;
 }
 p{
@@ -38,17 +34,20 @@ p{
 }
 .subnav a{
     margin: 0 1em;
-    color: hsl(198, 18%, 60%);
+    color: hsl(198, 18%, 64%);
+/*    color: var(--color-2);*/
 }
 .mainnav{
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
     margin-top: 1em;
 }
 .mainnav a{
-    color: hsl(198, 18%, 60%);
+    margin: 0 0.5em;
+    color: hsl(198, 18%, 64%);
+/*    color: var(--color-2);*/
 }
 .masthead{
     
@@ -86,8 +85,9 @@ h1.story-title{
 .story blockquote{
     quotes: "\201C" "\201D";
     margin: 1em;
-    color: hsl(198, 18%, 60%);
-    font-size: 1.2em;
+    color: hsl(198, 18%, 64%);
+/*    color: var(--color-2);*/
+    font-size: 1.4em;
     text-align: center;
 }
 .story blockquote::before, .story blockquote::after {
@@ -103,7 +103,8 @@ h1.story-title{
 .story p.byline{
     font-style: italic;
     margin-bottom: 0.5em;
-    color: hsl(198, 18%, 60%);
+    color: hsl(198, 18%, 64%);
+/*    color: var(--color-2);*/
     font-size: 1.2em;
 }
 p.byline span.author{
